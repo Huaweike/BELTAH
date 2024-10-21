@@ -248,12 +248,12 @@ function mybotpic() {
                 mybotpic
             
             };
-// BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
-if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
-const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
-         const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
-         zk.sendMessage(origineMessage, {
-             react: {
+    // ANTI-DELETE-SCRIPT STARYS HERE 👇 👇 👇 
+                                                                                                                                                                                                                    if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
+                                                                                                                                                                                                                          const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🐼', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🍂', '🎊', '🎉', '🎁', '⛑️', '♻️']
+                                                                                                                                                                                                        const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
+                                                                                                                                                                                           zk.sendMessage(origineMessage, {
+                                                                                                                                                                                                    react: {
                  text: emokis,
                  key: ms.key
              }
@@ -298,7 +298,7 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
         
                                     if(msg === null || !msg ||msg === 'undefined') {console.log('Message non trouver') ; return } 
         
-                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        😈SCENE-MD DELETED INFORMATION😈\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
+                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `   BELTAH-MD DELETED INFORMATION\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
                                 .then( () => {
                                     zk.sendMessage(idBot,{forward : msg},{quoted : msg}) ;
                                 })
@@ -514,7 +514,13 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
         console.log("bdd err " + e);
     }
     
+//ANTI-BOT SCRIPT 👇👇👇
 
+
+                                                                                                                                                                            if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
+
+                                                                                                                                                                             zk.readMessages([ms.key]);
+                                                                                                                                                                               }
 
     /** *************************anti-bot******************************************** */
     try {
@@ -675,19 +681,19 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://ibb.co/7SKY0tg';
+        ppgroup = '';
     }
 
     try {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `👋 Hello
+            let msg = `
 `;
 
             let membres = group.participants;
             for (let membre of membres) {
-                msg += ` *@${membre.split("@")[0]}* Welcome to Our Official Group,`;
+                msg += `Hello *@${membre.split("@")[0]}* Welcome to Our Official Group,`;
             }
 
             msg += `You might want to read the group Description to avoid getting removed...
@@ -695,11 +701,11 @@ zk.ev.on('group-participants.update', async (group) => {
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `one or somes member(s) left group;\n`;
+            let msg = `Another fellar didn't feel safe here ,,,,\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
-                msg += `@${membre.split("@")[0]}\n`;
+                msg += `@${membre.split("@")[0]} decided to leave our group.\n\n> Powered by Beltah Tech Bot`;
             }
 
             zk.sendMessage(group.id, { text: msg, mentions: membres });
@@ -864,6 +870,7 @@ zk.ev.on('group-participants.update', async (group) => {
     
     Prefix : [ ${prefixe} ]
     Mode :${md} mode
+    Plugins : 276
     Creator : Beltah Tech🇰🇪
     
  Support by Subscribing 
