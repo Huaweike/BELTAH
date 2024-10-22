@@ -271,7 +271,7 @@ zokou({
           'image': {
             'url': _0x1511aa[0].thumbnail
           },
-          'caption': "𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐕𝐈𝐃𝐄𝐎 𝐏𝐋𝐀𝐘𝐄𝐑\n♻️\n♻️♻️\n♻️♻️♻️\n> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌"
+          'caption': "*BELTAH-MD VIDEO DOWNLOADER*"
         };
         await _0xb8eb96.sendMessage(_0x3373a2, _0x505669, {
           'quoted': _0x393b2a
@@ -284,7 +284,7 @@ zokou({
         }, {
           'quoted': _0x393b2a
         });
-        _0x3a80fb("Downloded Successfully ❎");
+        _0x3a80fb("sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 254 🇰🇪");
       } else {
         _0x3a80fb("Searching...☢️");
       }
@@ -325,7 +325,7 @@ zokou({
           'image': {
             'url': _0x15f0a6[0].thumbnail
           },
-          'caption': "𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐀𝐔𝐃𝐈𝐎 𝐏𝐋𝐀𝐘𝐄𝐑\n♻️\n♻️♻️\n♻️♻️♻️\n> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌"
+          'caption': "*BELTAH-MD AUDIO DOWNLOADER*"
             };
         await _0x42a02f.sendMessage(_0x52185b, _0xebe15a, {
           'quoted': _0x22dabe
@@ -379,7 +379,7 @@ zokou({
           'image': {
             'url': _0x163c77[0].thumbnail
           },
-          'caption': "𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐕𝐈𝐃𝐄𝐎 𝐏𝐋𝐀𝐘𝐄𝐑\n♻️\n♻️♻️\n♻️♻️♻️\n> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌"
+          'caption': "*BELTAH-MD SONG DOWNLOADER*"
         }; 
         await _0xfd7861.sendMessage(_0x2f51eb, _0x24fa27, {
           'quoted': _0x8669d3
