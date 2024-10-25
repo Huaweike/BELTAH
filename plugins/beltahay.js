@@ -404,9 +404,299 @@ zokou({
     _0x21a46b("An error occurred while searching or downloading the audio.");
   }
 });*/
-const _0x1bd9bc=_0x46bc;(function(_0x3920b8,_0x5ed72a){const _0x3c8c9c=_0x46bc,_0x385c85=_0x3920b8();while(!![]){try{const _0x20f010=-parseInt(_0x3c8c9c(0x12a))/0x1*(parseInt(_0x3c8c9c(0x12e))/0x2)+parseInt(_0x3c8c9c(0x13d))/0x3+-parseInt(_0x3c8c9c(0x117))/0x4+-parseInt(_0x3c8c9c(0x121))/0x5+parseInt(_0x3c8c9c(0x13b))/0x6+-parseInt(_0x3c8c9c(0x13a))/0x7+-parseInt(_0x3c8c9c(0x11d))/0x8*(parseInt(_0x3c8c9c(0x138))/0x9);if(_0x20f010===_0x5ed72a)break;else _0x385c85['push'](_0x385c85['shift']());}catch(_0x8d3617){_0x385c85['push'](_0x385c85['shift']());}}}(_0x36fe,0x52465));const {zokou}=require('../framework/zokou'),yts=require(_0x1bd9bc(0x130));function _0x46bc(_0xd4968f,_0x2a9f14){const _0x36fe8a=_0x36fe();return _0x46bc=function(_0x46bc4a,_0x37834e){_0x46bc4a=_0x46bc4a-0x116;let _0x442386=_0x36fe8a[_0x46bc4a];return _0x442386;},_0x46bc(_0xd4968f,_0x2a9f14);}function _0x36fe(){const _0x594695=['Error\x20from\x20API:','334053hMvSoR','Downloded\x20Successfully\x20','1478162tzwDSw','3120558pvwllQ','*Downloded\x20Successfully\x20*','1968675vOANfv','Please\x20insert\x20a\x20song\x20name.','917180PNBIIJ','https://api.ibrahimadams.us.kg/api/download/ytmp4?url=','download_url','audio/mp4','success','An\x20error\x20occurred\x20while\x20searching\x20or\x20downloading\x20the\x20audio.','24QLoIVA','Searching...⏳','Download','video','953495gelSHm','result','Failed\x20to\x20download\x20audio.\x20Please\x20try\x20again\x20later.','&apikey=','play','json','join','length','videos','922AwKNHa','url','No\x20audio\x20found.','video/mp4','210ZhioRs','my-vriend','yt-search','song','sendMessage','No\x20videos\x20found.','error','status','BELTAH-MD\x20SEARCH\x0a\x0a\x20©Beltah\x20Tech'];_0x36fe=function(){return _0x594695;};return _0x36fe();}zokou({'nomCom':_0x1bd9bc(0x120),'categorie':'Search','reaction':'🎥'},async(_0x38a78c,_0x4d9feb,_0x4385c4)=>{const _0x410ac2=_0x1bd9bc,{ms:_0x1eaa37,repondre:_0x488a12,arg:_0x439da4}=_0x4385c4;if(!_0x439da4[0x0]){_0x488a12('Please\x20insert\x20a\x20song/video\x20name.');return;}try{let _0x21d2b4=_0x439
+//const _0x1bd9bc=_0x46bc;(function(_0x3920b8,_0x5ed72a){const _0x3c8c9c=_0x46bc,_0x385c85=_0x3920b8();while(!![]){try{const _0x20f010=-parseInt(_0x3c8c9c(0x12a))/0x1*(parseInt(_0x3c8c9c(0x12e))/0x2)+parseInt(_0x3c8c9c(0x13d))/0x3+-parseInt(_0x3c8c9c(0x117))/0x4+-parseInt(_0x3c8c9c(0x121))/0x5+parseInt(_0x3c8c9c(0x13b))/0x6+-parseInt(_0x3c8c9c(0x13a))/0x7+-parseInt(_0x3c8c9c(0x11d))/0x8*(parseInt(_0x3c8c9c(0x138))/0x9);if(_0x20f010===_0x5ed72a)break;else _0x385c85['push'](_0x385c85['shift']());}catch(_0x8d3617){_0x385c85['push'](_0x385c85['shift']());}}}(_0x36fe,0x52465));const {zokou}=require('../framework/zokou'),yts=require(_0x1bd9bc(0x130));function _0x46bc(_0xd4968f,_0x2a9f14){const _0x36fe8a=_0x36fe();return _0x46bc=function(_0x46bc4a,_0x37834e){_0x46bc4a=_0x46bc4a-0x116;let _0x442386=_0x36fe8a[_0x46bc4a];return _0x442386;},_0x46bc(_0xd4968f,_0x2a9f14);}function _0x36fe(){const _0x594695=['Error\x20from\x20API:','334053hMvSoR','Downloded\x20Successfully\x20','1478162tzwDSw','3120558pvwllQ','*Downloded\x20Successfully\x20*','1968675vOANfv','Please\x20insert\x20a\x20song\x20name.','917180PNBIIJ','https://api.ibrahimadams.us.kg/api/download/ytmp4?url=','download_url','audio/mp4','success','An\x20error\x20occurred\x20while\x20searching\x20or\x20downloading\x20the\x20audio.','24QLoIVA','Searching...⏳','Download','video','953495gelSHm','result','Failed\x20to\x20download\x20audio.\x20Please\x20try\x20again\x20later.','&apikey=','play','json','join','length','videos','922AwKNHa','url','No\x20audio\x20found.','video/mp4','210ZhioRs','my-vriend','yt-search','song','sendMessage','No\x20videos\x20found.','error','status','BELTAH-MD\x20SEARCH\x0a\x0a\x20©Beltah\x20Tech'];_0x36fe=function(){return _0x594695;};return _0x36fe();}zokou({'nomCom':_0x1bd9bc(0x120),'categorie':'Search','reaction':'🎥'},async(_0x38a78c,_0x4d9feb,_0x4385c4)=>{const _0x410ac2=_0x1bd9bc,{ms:_0x1eaa37,repondre:_0x488a12,arg:_0x439da4}=_0x4385c4;if(!_0x439da4[0x0]){_0x488a12('Please\x20insert\x20a\x20song/video\x20name.');return;}try{let _0x21d2b4=_0x439
+
+const { zokou } = require("../framework/zokou");
+const yts = require('yt-search');
+const BaseUrl = 'https://api.giftedtech.my.id';
+const giftedapikey = 'gifted';
+
+zokou({
+  nomCom: "play",
+  categorie: "Download",
+  reaction: "💿"
+}, async (dest, zk, commandeOptions) => {
+  const { ms, repondre, arg } = commandeOptions;
+
+  if (!arg[0]) {
+    repondre("Please insert a song name.");
+    return;
+  }
+
+  try {
+    let topo = arg.join(" ");
+    let videos = [];
+
+    // Perform YouTube search
+    const search = await yts(topo);
+    videos = search.videos;
+
+    if (videos && videos.length > 0) {
+      const videoUrl = videos[0].url;
+
+      // Call the API endpoint with the video URL to fetch audio download URL
+      const apiResponse = await fetch(`${BaseUrl}/api/download/ytmp3?url=${encodeURIComponent(videoUrl)}&apikey=${giftedapikey}`);
+      const apiResult = await apiResponse.json();
+
+      if (apiResult.status === 200 && apiResult.success) {
+        const audioDlUrl = apiResult.result.download_url;
+        
+        // Prepare the message with song details
+        const infoMess = {
+          image: { url: videos[0].thumbnail },
+          caption: `𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐀𝐔𝐃𝐈𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n
+╭───────────────◆
+│ *Title:* ${videos[0].title}
+│ *Quality:* mp3 (320kbps)
+│ *Duration:* ${videos[0].timestamp}
+│ *Viewers:* ${videos[0].views}
+│ *Uploaded:* ${videos[0].ago}
+│ *Artist:* ${videos[0].author.name}
+╰────────────────◆
+⦿ *Direct YtLink:* ${videoUrl}
+
+╭────────────────◆
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌 😡
+╰─────────────────◆`
+        };
+
+        // Send song details
+        await zk.sendMessage(dest, infoMess, { quoted: ms });
+
+        // Send the audio as a Buffer instead of URL
+        await zk.sendMessage(dest, {
+          audio: { url: audioDlUrl },
+          mimetype: 'audio/mp4'
+        }, { quoted: ms });
+     
+       repondre('*sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 254*...');
+      } else {
+        repondre('Failed to download audio. Please try again later.');
+      }
+    } else {
+      repondre('No audio found.');
+    }
+  } catch (error) {
+    console.error('Error from API:', error);
+    repondre('An error occurred while searching or downloading the audio.' + error);
+  }
+});
+
+zokou({
+  nomCom: "song",
+  categorie: "Download",
+  reaction: "💿"
+}, async (dest, zk, commandeOptions) => {
+  const { ms, repondre, arg } = commandeOptions;
+
+  if (!arg[0]) {
+    repondre("Please insert a song name.");
+    return;
+  }
+
+  try {
+    let topo = arg.join(" ");
+    let videos = [];
+
+    // Perform YouTube search
+    const search = await yts(topo);
+    videos = search.videos;
+
+    if (videos && videos.length > 0) {
+      const videoUrl = videos[0].url;
+
+      // Call the API endpoint with the video URL to fetch audio download URL
+      const apiResponse = await fetch(`${BaseUrl}/api/download/ytmp3?url=${encodeURIComponent(videoUrl)}&apikey=${giftedapikey}`);
+      const apiResult = await apiResponse.json();
+
+      if (apiResult.status === 200 && apiResult.success) {
+        const audioDlUrl = apiResult.result.download_url;
+        
+        // Prepare the message with song details
+        const infoMess = {
+          image: { url: videos[0].thumbnail },
+          caption: `𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐀𝐔𝐃𝐈𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n
+╭───────────────◆
+│ *Title:* ${videos[0].title}
+│ *Quality:* mp3 (320kbps)
+│ *Duration:* ${videos[0].timestamp}
+│ *Viewers:* ${videos[0].views}
+│ *Uploaded:* ${videos[0].ago}
+│ *Artist:* ${videos[0].author.name}
+╰────────────────◆
+⦿ *Direct YtLink:* ${videoUrl}
+
+╭────────────────◆
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌 😡
+╰─────────────────◆`
+        };
+
+        // Send song details
+        await zk.sendMessage(dest, infoMess, { quoted: ms });
+
+        // Send the audio as a Buffer instead of URL
+        await zk.sendMessage(dest, {
+          document: { url: audioDlUrl },
+          mimetype: 'audio/mp4'
+        }, { quoted: ms });
+       
+        repondre('*sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 254*...');
+      } else {
+        repondre('Failed to download audio. Please try again later.');
+      }
+    } else {
+      repondre('No audio found.');
+    }
+  } catch (error) {
+    console.error('Error from API:', error);
+    repondre('An error occurred while searching or downloading the audio.' + error);
+  }
+});
 
 
+zokou({
+  nomCom: "video",
+  categorie: "Download",
+  reaction: "🎥"
+}, async (dest, zk, commandeOptions) => {
+  const { ms, repondre, arg } = commandeOptions;
+
+  if (!arg[0]) {
+    repondre("Please insert a song/video name.");
+    return;
+  }
+
+  try {
+    let topo = arg.join(" ");
+    let videos = [];
+
+    // Perform YouTube search
+    const search = await yts(topo);
+    videos = search.videos;
+
+    if (videos && videos.length > 0) {
+      const videoUrl = videos[0].url;
+
+      // Call the API endpoint with the video URL to fetch the video download URL
+      const apiResponse = await fetch(`${BaseUrl}/api/download/ytmp4?url=${encodeURIComponent(videoUrl)}&apikey=${giftedapikey}`);
+      const apiResult = await apiResponse.json();
+
+      if (apiResult.status === 200 && apiResult.success) {
+        const videoDlUrl = apiResult.result.download_url;
+
+        // Prepare the message with video details
+        const infoMess = {
+          image: { url: videos[0].thumbnail },
+          caption: `𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n
+╭───────────────◆
+│ *Title:* ${videos[0].title}
+│ *Quality:* 720p-HD
+│ *Duration:* ${videos[0].timestamp}
+│ *Viewers:* ${videos[0].views}
+│ *Uploaded:* ${videos[0].ago}
+│ *Artist:* ${videos[0].author.name}
+╰────────────────◆
+⦿ *Direct YtLink:* ${videoUrl}
+
+╭────────────────◆
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌 😡
+╰─────────────────◆`
+        };
+
+        // Send video details
+        await zk.sendMessage(dest, infoMess, { quoted: ms });
+
+        // Send the video as a URL (direct download link)
+        await zk.sendMessage(dest, {
+          video: { url: videoDlUrl },
+      caption: "*𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃*",
+          mimetype: 'video/mp4'
+        }, { quoted: ms });
+
+        repondre('*sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 254*...');
+      } else {
+        repondre('Failed to download the video. Please try again later.');
+      }
+    } else {
+      repondre('No videos found.');
+    }
+  } catch (error) {
+    console.error('Error from API:', error);
+    repondre('An error occurred while searching or downloading the video.' + error);
+  }
+});
+
+zokou({
+  nomCom: "videodoc",
+  categorie: "Download",
+  reaction: "🎥"
+}, async (dest, zk, commandeOptions) => {
+  const { ms, repondre, arg } = commandeOptions;
+
+  if (!arg[0]) {
+    repondre("Please insert a song/video name.");
+    return;
+  }
+
+  try {
+    let topo = arg.join(" ");
+    let videos = [];
+
+    // Perform YouTube search
+    const search = await yts(topo);
+    videos = search.videos;
+
+    if (videos && videos.length > 0) {
+      const videoUrl = videos[0].url;
+
+      // Call the API endpoint with the video URL to fetch the video download URL
+      const apiResponse = await fetch(`${BaseUrl}/api/download/ytmp4?url=${encodeURIComponent(videoUrl)}&apikey=${giftedapikey}`);
+      const apiResult = await apiResponse.json();
+
+      if (apiResult.status === 200 && apiResult.success) {
+        const videoDlUrl = apiResult.result.download_url;
+
+        // Prepare the message with video details
+        const infoMess = {
+          image: { url: videos[0].thumbnail },
+          caption: `𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐕𝐈𝐃𝐄𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑\n
+╭───────────────◆
+│ *Title:* ${videos[0].title}
+│ *Quality:* 720p-HD
+│ *Duration:* ${videos[0].timestamp}
+│ *Viewers:* ${videos[0].views}
+│ *Uploaded:* ${videos[0].ago}
+│ *Artist:* ${videos[0].author.name}
+╰────────────────◆
+⦿ *Direct YtLink:* ${videoUrl}
+
+╭────────────────◆
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐓𝐄𝐀𝐌 😡
+╰─────────────────◆`
+        };
+
+        // Send video details
+        await zk.sendMessage(dest, infoMess, { quoted: ms });
+
+        // Send the video as a URL (direct download link)
+        await zk.sendMessage(dest, {
+          document: { url: videoDlUrl },
+               caption: "*𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃*",
+          mimetype: 'video/mp4'
+        }, { quoted: ms });
+ 
+       repondre('*sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 254*...');
+      } else {
+        repondre('Failed to download the video. Please try again later.');
+      }
+    } else {
+      repondre('No videos found.');
+    }
+  } catch (error) {
+    console.error('Error from API:', error);
+    repondre('An error occurred while searching or downloading the video.' + error);
+  }
+});
    /* if (videos && videos.length > 0) {
       const videoUrl = videos[0].url;
 
