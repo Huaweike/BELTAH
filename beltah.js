@@ -866,7 +866,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `SCENE-MD IS CONNECTED
+                let cmsg = `BELTAH-MD IS CONNECTED
     
     Prefix : [ ${prefixe} ]
     Mode :${md} mode
