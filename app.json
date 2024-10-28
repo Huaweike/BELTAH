@@ -27,6 +27,11 @@
       "value": "no",
       "required": false
     },
+    "ANTICALL": {
+      "description": "All your calls will be declined automatically",
+      "value": "yes",
+      "required": false
+    },
     "AUTOREAD_MESSAGES": {
       "description": "Your messages will be read automatically,(type yes to active or no to deactive  ; don't write in capital letter)",
       "value": "yes",
