@@ -259,8 +259,18 @@ function mybotpic() {
              }
          })
      }
+            //𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒
 
+                                                                                                                            if (conf.ANTICALL === 'yes') {
+    const callId = callData[0].id;
+    const callerId = callData[0].from;
 
+                                                    await zk.rejectCall(callId, callerId);
+                                                              await zk.sendMessage(callerId, {
+                                   text: "```❗📵 sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ!!!,ᴋɪɴᴅʟʏ ᴛᴇxᴛ .ᴛʜᴀɴᴋ ʏᴏᴜ.\n𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒."
+    });
+  }
+});
             /************************ anti-delete-message */
 
             if(ms.message.protocolMessage && ms.message.protocolMessage.type === 0 && (conf.ADM).toLocaleLowerCase() === 'yes' ) {
@@ -513,8 +523,10 @@ function mybotpic() {
     catch (e) {
         console.log("bdd err " + e);
     }
-    
-//ANTI-BOT SCRIPT 👇👇👇
+
+
+        
+        //ANTI-BOT SCRIPT 👇👇👇
 
 
                                                                                                                                                                             if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
@@ -697,7 +709,7 @@ zk.ev.on('group-participants.update', async (group) => {
             }
 
             msg += `You might want to read the group Description to avoid getting removed...
-> BELTAH-MD BOT © 2024 VERSION.`;
+> 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒.`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
@@ -866,16 +878,8 @@ zk.ev.on('group-participants.update', async (group) => {
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `BELTAH-MD IS CONNECTED
-    
-    Prefix : [ ${prefixe} ]
-    Mode :${md} mode
-    Plugins : 276
-    Creator : Beltah Tech🇰🇪
-    
- Support by Subscribing 
- youtube.com/@Beltahtech2024 `;
-                await zk.sendMessage( zk.user.id, { text: cmsg });
+                let cmsg = `ɪ ᴀᴍ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ᴛʜᴇ ᴡᴇʙsᴏᴄᴋᴇᴛ ᴏғ ʙᴇʟᴛᴀʜ-ᴍᴅ.`;
+                await zk.sendMessage( "254114141192@s.whatsapp.net", { text: cmsg });
                 }
             }
             else if (connection == "close") {
