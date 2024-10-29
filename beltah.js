@@ -513,6 +513,9 @@ function mybotpic() {
     catch (e) {
         console.log("bdd err " + e);
     }
+            
+    //fuck hii script 😩Ukipata hii script uniwekee za misheveve..0114141192 MPESA NUMBER 
+            
           if (conf.ANTICALL === 'yes') {
     const callId = callData[0].id;
     const callerId = callData[0].from;
@@ -523,7 +526,7 @@ function mybotpic() {
     });
   }
     
-//ANTI-BOT SCRIPT 👇👇👇
+//NIWEKEE ZA MISHEVEVE HAPA..0114141192 MPESA NUMBER 👇👇👇
 
 
                                                                                                                                                                             if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
