@@ -515,16 +515,22 @@ function mybotpic() {
     }
             
     //fuck hii script 😩Ukipata hii script uniwekee za misheveve..0114141192 MPESA NUMBER 
-            
-if (conf.ANTICALL === 'yes') {
+ 
+        const zk = (0, baileys_1.default)(sockOptions);
+        store.bind(zk.ev);
+        setInterval(() => { store.writeToFile("store.json"); }, 3000);
+        zk.ev.on("call", async (callData) => {
+  if (conf.ANTICALL === 'yes') {
     const callId = callData[0].id;
     const callerId = callData[0].from;
 
     await zk.rejectCall(callId, callerId);
     await zk.sendMessage(callerId, {
-      text: "❗📵  sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ .ᴛʜᴀɴᴋ ʏᴏᴜ . 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
+      text: "```❗📵 sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ .ᴛʜᴀɴᴋ ʏᴏᴜ .\n> 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
     });
   }
+});           
+
     
 //NIWEKEE ZA MISHEVEVE HAPA..0114141192 MPESA NUMBER 👇👇👇
 
@@ -846,7 +852,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log(" Beltah-md installing cmds😇\n\n");
+                console.log(" Beltah-md loading plugins😇\n\n");
                 //chargement des commandes 
                 console.log("chargement des plugins ...\n");
                 fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
