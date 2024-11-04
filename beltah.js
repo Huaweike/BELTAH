@@ -516,13 +516,13 @@ function mybotpic() {
             
     //fuck hii script 😩Ukipata hii script uniwekee za misheveve..0114141192 MPESA NUMBER 
             
-          if (conf.ANTICALL === 'yes') {
+if (conf.ANTICALL === 'yes') {
     const callId = callData[0].id;
     const callerId = callData[0].from;
 
     await zk.rejectCall(callId, callerId);
     await zk.sendMessage(callerId, {
-      text: "❗📵  sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ .ᴛʜᴀɴᴋ ʏᴏᴜ .\n>  𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
+      text: "❗📵  sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ .ᴛʜᴀɴᴋ ʏᴏᴜ . 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
     });
   }
     
