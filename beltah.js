@@ -839,7 +839,11 @@ zk.ev.on('group-participants.update', async (group) => {
             insertContact(contacts);
         });
         //fin événement contact 
-        //événement connexion
+        const getCurrentTimeInNairobi = () => {
+            return DateTime.now().setZone('Africa/Nairobi').toLocaleString(DateTime.TIME_SIMPLE);
+        };
+
+      //événement connexion
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
@@ -888,6 +892,7 @@ zk.ev.on('group-participants.update', async (group) => {
     
     Prefix : [ ${prefixe} ]
     Mode :${md} mode
+    Time : ${ + getCurrentTimeInNairobi() +}
     Commands : 307
     platform : Chrome (Ubuntu)
     Creator : Beltah Tech🇰🇪
