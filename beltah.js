@@ -248,12 +248,36 @@ function mybotpic() {
                 mybotpic
             
             };
-    // ANTI-DELETE-SCRIPT STARYS HERE 👇 👇 👇 
-                                                                                                                                                                                                                    if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
-                                                                                                                                                                                                                          const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🐼', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🍂', '🎊', '🎉', '🎁', '⛑️', '♻️']
-                                                                                                                                                                                                        const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
-                                                                                                                                                                                           zk.sendMessage(origineMessage, {
-                                                                                                                                                                                                    react: {
+
+  //AUTO READ BELTAH-MD 
+            
+                                                                                                                                                                            if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
+
+                                                                                                                                                                             zk.readMessages([ms.key]);
+                                                                                                                                                                                }
+
+//ANTICALL BELTAH-MD 
+            const zk = (0, baileys_1.default)(sockOptions);
+        store.bind(zk.ev);
+        setInterval(() => { store.writeToFile("store.json"); }, 3000);
+        zk.ev.on("call", async (callData) => {
+  if (conf.ANTICALL === 'yes') {
+    const callId = callData[0].id;
+    const callerId = callData[0].from;
+
+    await zk.rejectCall(callId, callerId);
+    await zk.sendMessage(callerId, {
+      text: "```❗📵 sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ .ᴛʜᴀɴᴋ ʏᴏᴜ .\n> 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
+    });
+  }
+});           
+
+// BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
+if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
+const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
+         const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
+         zk.sendMessage(origineMessage, {
+             react: {
                  text: emokis,
                  key: ms.key
              }
@@ -298,7 +322,7 @@ function mybotpic() {
         
                                     if(msg === null || !msg ||msg === 'undefined') {console.log('Message non trouver') ; return } 
         
-                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `   BELTAH-MD DELETED INFORMATION\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
+                                await zk.sendMessage(idBot,{ image : { url : './media/deleted-message.jpg'},caption : `        😈SCENE-MD DELETED INFORMATION😈\n Message from @${msg.key.participant.split('@')[0]}​` , mentions : [msg.key.participant]},)
                                 .then( () => {
                                     zk.sendMessage(idBot,{forward : msg},{quoted : msg}) ;
                                 })
@@ -513,32 +537,8 @@ function mybotpic() {
     catch (e) {
         console.log("bdd err " + e);
     }
-            
-    //fuck hii script 😩Ukipata hii script uniwekee za misheveve..0114141192 MPESA NUMBER 
- 
-        const zk = (0, baileys_1.default)(sockOptions);
-        store.bind(zk.ev);
-        setInterval(() => { store.writeToFile("store.json"); }, 3000);
-        zk.ev.on("call", async (callData) => {
-  if (conf.ANTICALL === 'yes') {
-    const callId = callData[0].id;
-    const callerId = callData[0].from;
-
-    await zk.rejectCall(callId, callerId);
-    await zk.sendMessage(callerId, {
-      text: "```❗📵 sᴏʀʀʏ ,ɴᴏ ᴄᴀʟʟs ᴀʀᴇ ᴀʟʟᴏᴡᴇᴅ ,ᴋɪɴᴅʟʏ ᴛᴇxᴛ .ᴛʜᴀɴᴋ ʏᴏᴜ .\n> 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐁𝐎𝐓 © 𝟐𝟎𝟐𝟒 ."
-    });
-  }
-});           
-
     
-//NIWEKEE ZA MISHEVEVE HAPA..0114141192 MPESA NUMBER 👇👇👇
 
-
-                                                                                                                                                                            if (origineMessage === auteurMessage && conf.AUTOREAD_MESSAGES === "yes") {
-
-                                                                                                                                                                             zk.readMessages([ms.key]);
-                                                                                                                                                                               }
 
     /** *************************anti-bot******************************************** */
     try {
@@ -699,31 +699,31 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = '';
+        ppgroup = 'https://telegra.ph/file/305827be2080296d1ab2d.jpg';
     }
 
     try {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `
+            let msg = `👋 Hello
 `;
 
             let membres = group.participants;
             for (let membre of membres) {
-                msg += `Hello *@${membre.split("@")[0]}* Welcome to Our Official Group,`;
+                msg += ` *@${membre.split("@")[0]}* Welcome to Our Official Group,`;
             }
 
             msg += `You might want to read the group Description to avoid getting removed...
-> BELTAH-MD BOT © 2024 VERSION.`;
+> BELTAH-MD BOT © 2024.`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `Another fellar didn't feel safe here ,,,,\n`;
+            let msg = `one or somes member(s) left group;\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
-                msg += `@${membre.split("@")[0]} decided to leave our group.\n\n> Powered by Beltah Tech Bot`;
+                msg += `@${membre.split("@")[0]}\n`;
             }
 
             zk.sendMessage(group.id, { text: msg, mentions: membres });
@@ -859,7 +859,7 @@ zk.ev.on('group-participants.update', async (group) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
                             require(__dirname + "/plugins/" + fichier);
-                            console.log(fichier + "Successfully installed Scene md commands✔️");
+                            console.log(fichier + "Successfully loaded Beltahmd plugins✔️");
                         }
                         catch (e) {
                             console.log(`${fichier} n'a pas pu être chargé pour les raisons suivantes : ${e}`);
@@ -888,7 +888,8 @@ zk.ev.on('group-participants.update', async (group) => {
     
     Prefix : [ ${prefixe} ]
     Mode :${md} mode
-    Plugins : 276
+    Commands : 307
+    platform : Chrome (Ubuntu)
     Creator : Beltah Tech🇰🇪
     
  Support by Subscribing 
