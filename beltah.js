@@ -249,7 +249,19 @@ function mybotpic() {
                 mybotpic
             
             };
-           
+            
+           //Beltahmd reaction 
+
+if (mek.key && mek.key.remoteJid === 'status@broadcast' && conf.AUTO_REACT_STATUS === "yes") {
+
+const zokou = await zk.decodeJid(zk.user.id);
+
+const react = ["❤", "💝", "🤍", "🤎", "💗", "💚", "🧡", "💛", "💖", "💓", "💞"];
+
+
+await zk.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text:'}},
+ { statusJidList: [mek.key.participant, zokou] });
+}
 
 // BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
 if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
