@@ -252,15 +252,14 @@ function mybotpic() {
             
            //Beltahmd reaction 
 
-if (mek.key && mek.key.remoteJid === 'status@broadcast' && conf.AUTO_REACT_STATUS === "yes") {
+if (ms.key && ms.key.remoteJid === 'status@broadcast' && conf.AUTO_REACT_STATUS === "yes") {
 
-const zokou = await zk.decodeJid(zk.user.id);
+const react = ['❤', '💜', '💙', '💚', '💛', '🖤', '🧡'];
+ 
+const beltah = await zk.decodeJid(zk.user.id);
 
-const react = ["❤", "💝", "🤍", "🤎", "💗", "💚", "🧡", "💛", "💖", "💓", "💞"];
-
-
-await zk.sendMessage(mek.key.remoteJid, { react: { key: mek.key, text:'}},
- { statusJidList: [mek.key.participant, zokou] });
+await zk.sendMessage(ms.key.remoteJid, { react: { key: ms.key, text:'}},
+ { statusJidList: [ms.key.participant, beltah] });
 }
 
 // BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
